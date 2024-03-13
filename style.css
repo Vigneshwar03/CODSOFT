@@ -1,0 +1,296 @@
+
+nav {
+    background-color: #222222; 
+    color: white; 
+    padding: 15px; 
+    text-align: center; 
+}
+
+nav h1 {
+    margin: 0; 
+}
+
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 10px; 
+    color: #fff; 
+    cursor: pointer;
+    transition: color 0.3s ease; 
+}
+
+li:hover {
+    color: aqua; 
+}
+
+
+h1 {
+    text-align: center; 
+    margin-top: 20px; 
+    color: #fff; 
+}
+
+nav {
+    background-color: #1d1b1b; 
+    color: white; 
+    padding: 15px; 
+    text-align: center; 
+    animation: fadeIn 1s ease-in; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+nav h1 {
+    margin: 0;
+    animation: slideIn 1s ease-out; 
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px); 
+        opacity: 0; 
+    }
+    to {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+
+
+input {
+    width: 60%;
+    padding: 150x;
+}
+
+.searchbar {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar input[type="text"] {
+    width: 600px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.box {
+    background-color: black;
+    color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 20px rgba(92, 61, 142, 0.8); /* Updated glow effect */
+    width: 220px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(92, 61, 142, 1); /* Increased glow on hover */
+}
+
+.box img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.box p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.box button {
+    background-color: #5c3d8e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.box button:hover {
+    background-color: #4a2f6e;
+}
+
+
+        .box button:hover {
+            background-color: #4a2f6e;
+        }.about {
+            background-color:none;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            animation-name: fadeInUp;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: both;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .about h2 {
+            font-size: 24px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            animation-delay: 0.5s;
+            animation-fill-mode: both;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .bike-image {
+            width: 500px;
+            height: 400px;
+            margin-right: 20px;
+            border-radius: 10px;
+            animation-name: slideInLeft;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+           
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .about-text {
+            flex: 1;
+            animation-name: slideInRight;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+
+      
+    
+    body {
+       background-color: black;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        margin: 0; 
+        padding: 0; 
+        font-family: Arial, sans-serif; 
+        color:black; 
+    }
+    .contact {
+        background-color:none;
+        color: white;
+        padding: 20px; 
+        text-align: center; 
+        border-radius: 10px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        margin-top: 20px; 
+    }
+    
+    .contact h4 {
+        font-size: 24px; 
+        margin-bottom: 10px; 
+    }
+    
+    .contact p, .contact h5 {
+        margin-bottom: 5px; 
+    }
+    
+    .contact p {
+        font-size: 16px; 
+    }
+    
+    .contact h5 {
+        font-size: 14px;
+        font-style: italic; /
+    }
+    
+   
+    .contact:hover {
+        background-color: #191a1a; 
+        cursor: pointer;
+    }
+    body {
+        background-image: url('https://undsgn.com/wp-content/uploads/2018/04/ltotbngnzzu-uai-1600x900.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: black;
+    }
+    
